@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RFID 與 NFC</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#video">小劇場</a></li>
+      <li><a href="#RFID">RFID介紹</a></li>
+      <li><a href="#NFC">NFC介紹</a></li>
+      <li><a href="#differences">兩者差異</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>RFID 與 NFC</h1>
+    <p>資財二甲 陳建榮、吳承恩、劉冠緯、葉庭瑜</p>
+  </header>
+
+  <section id="video">
+    <h2>小劇場</h2>
+    <div class="centered-iframe">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/m0wXeSxQj9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="RFID">
+    <h2>RFID</h2>
+    <h3>技術原理</h3>
+    <p>1. RFID標籤：RFID標籤是RFID系統中的關鍵組件。它由一個芯片和一個天線組成。芯片上存儲著識別信息和其他相關數據。天線用於接收和發射無線電波信號。</p>
+    <br>
+    <p>2. 讀寫器：讀寫器是RFID系統中與標籤進行通信的設備。它通常包含一個天線和一個讀取/寫入單元。天線用於發射和接收無線電波信號，並與標籤進行通信。讀取/寫入單元用於解析標籤回復的數據。</p>
+    <br>
+    <p>3. 無線電波通信：RFID系統通過無線電波進行通信。當讀寫器發射無線電波信號時，它會激活附近的RFID標籤。標籤接收到無線電波信號後，從中獲取能量，並回復一個包含識別信息和其他數據的信號。</p>
+    <br>
+    <p>4. 識別和數據傳輸：當RFID標籤回復信號時，其中包含的識別信息和其他數據可以被讀寫器解析和處理。這些數據可以是關於物體的身份、位置、狀態等信息。</p>
+    <br>
+    <p>5. 資料庫管理：讀寫器將解析的數據傳輸到資料庫中進行管理和處理。資料庫可以存儲和檢索與物體相關的信息，並支持業務決策、庫存管理等應用。</p>
+    <br>
+
+    <div class="img_bar">
+      <img src="image/RFID_tag.jpg" height="200px">
+      ▪️RFID標籤
+      <img src="image/RFID_reader.jpg" height="200px">
+      ▪️讀寫器
+    </div>
+    
+    <h3>應用場景</h3>
+    <p>1. 物流和供應鏈管理：RFID可以用於物流和供應鏈管理，實現貨物的追蹤和管理。每個貨物上都附有RFID標籤，可快速識別和記錄貨物的位置、運送時間、運送狀態等信息，提高物流效率和準確性。</p>
+    <br>
+    <p>2. 庫存管理：RFID可用於庫存管理，幫助企業實時監控庫存數量和位置。通過在庫存中嵌入RFID標籤，可以快速識別和追蹤庫存物品，並自動更新庫存數據，提高庫存管理的準確性和效率。</p>
+    <br>
+    <p>3. 零售業：RFID在零售業中的應用包括商品防盜、商品追蹤和自動結算等。商品上的RFID標籤可以提供唯一識別信息，防止盜竊，同時可追蹤商品的庫存和銷售情況，實現快速結算和庫存補充。</p>
+    <br>
+    <p>4. 資產管理：RFID可用於企業和組織的資產管理，如辦公設備、工具和文檔等。每個資產都可以貼上RFID標籤，方便追蹤和管理，提高資產的可見性和利用率。</p>
+    <br>
+    <p>5. 運輸和出行：RFID可用於交通和運輸系統，如電子收費系統和公共交通卡。用戶可以使用帶有RFID技術的卡片或手機通過讀取器快速進行付款或進出閘口，實現無現金支付和方便的出行體驗。</p>
+    <br>
+    <p>6. 醫療保健：RFID可在醫療保健領域應用於病患識別、藥品管理和設備追蹤等方面。通過RFID標籤，可以確保病患識別的準確性，管理藥品的庫存和使用，以及追蹤和監控醫療設備的使用情況。</p>
+    <br>
+    <p>7. 環境監測：RFID可以用於環境監測和資源管理。通過在感測器和監測設備上</p>
+    <br>
+
+    <div class="img_bar">
+      <img src="image/RFID_sample1.jpg" height="200px">
+      ▪️物流和供應鏈管理
+    </div>
+
+    <h4>RFID技術通過標籤和讀寫器之間的無線電波通信，實現對物體的識別和數據傳輸。這使得物體的識別、追蹤和管理變得更加方便和高效。</h4>
+  </section>
+
+  <section id="NFC">
+    <h2>NFC</h2>
+    <h3>技術原理</h3>
+    <p>1. 近場通信：NFC是一種基於無線電波的短距離通信技術，通信範圍通常在幾公分之內。它利用13.56 MHz的無線電頻率進行通信，並支持數據的讀取和寫入。</p>
+    <br>
+    <p>2. NFC芯片：NFC技術的核心是NFC芯片，它可以嵌入在設備（如智能手機、智能門禁卡等）或標籤（如NFC標籤、NFC貼紙等）中。芯片上存儲著數據，並通過無線電波與其他NFC設備進行通信。</p>
+    <br>
+    <p>3. 主被動模式：NFC設備可以以主動或被動模式運作。主動模式下，NFC設備（稱為主動器）將無線電波發射出去，另一個NFC設備（稱為被動器）接收信號。被動模式下，被動器等待主動器的信號進行回應。</p>
+    <br>
+    <p>4. 感應區域：NFC通信需要將兩個設備的NFC芯片靠近到足夠接觸的距離。這種接觸的區域被稱為感應區域，通常在1到4公分之間。只有當兩個設備的NFC芯片處於感應區域內，它們才能進行通信。</p>
+    <br>
+    <p>5. 數據傳輸和交換：兩個NFC設備的芯片處於感應區域內就可以進行數據的傳輸。包括文本、URL、圖片、音頻或其他數據。通信的速度相對較慢，但由於通信距離短且不用複雜的配對過程，非常方便。</p>
+    <br>
+
+    <div class="img_bar">
+      <img src="image/NFC_core.webp" height="200px">
+      ▪️NFC芯片
+      <img src="image/NFC_icon.jpg" height="200px">
+      ▪️NFC圖標
+    </div>
+
+    <h3>應用場景</h3>
+    <p>1.移動支付：NFC被廣泛應用於移動支付服務，如Apple Pay、Google Pay等。使用NFC-enabled的智能手機或支付卡，用戶可以通過將手機或卡片靠近支持NFC的讀取器來完成支付交易，方便快捷。</p>
+    <br>
+    <p>2.智能門禁系統：NFC技術在門禁系統中也得到廣泛應用。用戶可以通過將NFC-enabled的智能手機或門禁卡靠近門禁讀取器，實現快速進出門禁區域。</p>
+    <br>
+    <p>3.智能手機交互：NFC技術使得智能手機之間可以實現快速的數據傳輸和交換。例如，用戶可以通過將兩個支持NFC的手機靠近，分享聯繫方式、照片、音樂等。</p>
+    <br>
+    <p>4.智能標籤：NFC標籤是嵌入了NFC芯片的小型標籤，附加在物體上。用戶通過將NFC-enabled的手機靠近標籤，快速獲取相關信息，如產品、促銷信息等。在零售業、物流管理和產品驗證等方面有廣泛應用。</p>
+    <br>
+    <p>5.智能電子：NFC技術也用於智能電子設備的交互。例如將NFC-enabled的手機靠近支持NFC的音箱或耳機，可以快速建立無線連接，實現音樂播放或數據傳輸。</p>
+    <br>
+    
+    <div class="img_bar">
+      <img src="image/NFC_sample1.jpg" height="200px">
+      ▪️行動支付
+      <img src="image/NFC_sample2.jpg" height="200px">
+      ▪️捷運閘門
+    </div>
+  
+    <h4>NFC技術提供了短距離、高度便捷和安全的無線通信。它在移動支付、智能門禁、智能手機交互、智能標籤和智能電子等領域的應用不斷擴展，為用戶提供了更方便、快捷和豐富的使用體驗。</h4>
+  </section>
+
+  <section id="differences">
+    <h2>RFID與NFC的差異</h2>
+    <p>1. 通信距離：RFID的通信距離相對較長，達到數米到數十米，取決於天線和功率的配置。而NFC的通信距離較短，在1到4公分之間。RFID適合大範圍的物體識別和追蹤，而NFC則用於近距離的數據傳輸。</p>
+    <br>
+    <p>2. 應用場景：RFID用於物體識別和追蹤，包括物流管理、庫存控制、資產管理等需要長距離通信的場景。NFC技術更多用於近場通信和交互，如移動支付、智能門禁、智能手機交互等。</p>
+    <br>
+    <p>3. 通信模式：RFID通常運作在被動模式，即RFID標籤被主動器激活並回復信息。而NFC支持被動模式和主動模式。被動模式下，NFC設備可以回復信息給主動器；主動模式下，NFC設備可以主動發送信息。</p>
+    <br>
+    <p>4. 數據傳輸速度：由於通信距離的差異，RFID技術通常具有較快的數據傳輸速度，可以達到數百kbps或更高。而NFC技術的通信距離較短，通常數據傳輸速度較慢，一般在100kbps以下。</p>
+    <br>
+    <h4>總的來說，RFID和NFC都是無線通信技術，但它們在通信距離、應用場景、通信模式和數據傳輸速度等方面存在一些差異。根據具體需求，可以選擇適合的技術來實現相應的應用。</h4>
+  
+    <div class="img_bar">
+      <img src="image/difference1.jpg" height="200px">
+      ▪️RFID(左)和NFC(右)
+    </div>
+  
+  </section>
+
+  <footer>
+    <p>&copy; 資財二甲 RFID 與 NFC 宣傳網頁. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
